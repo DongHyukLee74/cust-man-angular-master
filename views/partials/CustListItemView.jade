@@ -1,0 +1,13 @@
+div(ng-repeat='cust in custman', style='float:left;')
+	ul.thumbnails
+		li
+			a.thumbnail.plain(href='/custman/{{cust._id}}', style='text-align: center;')
+				div(style='height:150px')
+					img(src='pics/random.jpg', height='150', width='125', alt='')
+				h5 Name: {{cust.name}} 
+				h5 Age: {{cust.age}} 
+				h5 Sex: {{cust.sex}}
+				i.icon-globe 
+				h5 Address: {{cust.address}} 
+				h5 Telephone Number: {{cust.telnum}} 
+				h5 Handphone Number: {{cust.hpnum}}

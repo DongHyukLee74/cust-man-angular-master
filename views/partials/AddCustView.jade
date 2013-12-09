@@ -1,0 +1,47 @@
+form.form-horizontal.span12(action='/api/custman', ng-upload)
+  legend New Customer
+  br
+  .row
+    .span8
+      .control-group
+        label.control-label(for='custId') Id:
+        .controls
+          input#custId(type='text', name='id', ng-model='form._id' disabled)
+      .control-group
+        label.control-label(for='age') Age:
+        .controls
+          input#age(type='text', name='age', ng-model='form.age')
+      .control-group
+        label.control-label(for='name') Name:
+        .controls
+          input#name(type='text', name='name', ng-model='form.name')
+      .control-group
+        label.control-label(for='sex') Sex:
+        .controls
+          select#sex.input-small(name='sex', ng-model='form.sex')
+            option(value="Man") Man
+            option(value="Woman") Woman
+      .control-group
+        label.control-label(for='address') Address:
+        .controls
+          input#address(type='text', name='address', ng-model='form.address')
+      .control-group
+        label.control-label(for='telnum') Telephone Number:
+        .controls
+          input#telnum(type='text', name='telnum', ng-model='form.telnum')
+      .control-group
+        label.control-label(for='hpnum') Handphone Number:
+        .controls
+          input#hpnum(type='text', name='hpnum', ng-model='form.hpnum')
+    .span4
+      .well(style='width: 50%; text-align: center; margin: 0px auto;')
+        p
+          img#picture(width='180', src='pics/random.jpg')
+  .form-actions
+    button.btn.btn-primary(type='submit') Save
+    button.btn.btn-danger(ng-click='home()') Home
+.row-fluid.status-bar
+.span12
+  .alert.alert-success(style='display: none;')
+    b Success!
+    | Customer saved successfully
