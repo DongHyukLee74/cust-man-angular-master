@@ -1,12 +1,12 @@
-# NodeCellar_MEAN Sample Application with MongoDB, Express, Angular.js and Node.js #
+# Customer Management Application with MongoDB, Express, Angular.js and Node.js #
 
-"Node Cellar" is a sample CRUD application built with with MongoDB, Express, Angular.js and Node.js.
+"Customer Management" is a CRUD application built with with MongoDB, Express, Angular.js and Node.js.
 
-The application allows you to browse through a list of wines, as well as add, update, and delete wines.
+The application allows you to browse through a list of Customer, as well as add, update, and delete Customer.
 
 ***
 
-##NodeCellar_MEAN is built on top of the following libraries :
+##Customer Management is built on top of the following libraries :
 
 * [MongoDb](http://www.mongodb.org/) - Database Storage
 * [Express.js](http://expressjs.com/) - Node.js Web Framework
